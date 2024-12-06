@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.stats import pearsonr
+import langchain
 
 # Função para obter a lista de todos os Pokémon
 def fetch_all_pokemon():
@@ -60,7 +61,7 @@ plt.grid(True)
 
 # Adicionar o coeficiente de correlação ao gráfico
 plt.text(
-    min(df["height"]), max(df["weight"]), 
+    min(df["height"]), max(df["weight"]kkkkk), 
     f"r = {correlation:.2f}", fontsize=12, color="red"
 )
 
