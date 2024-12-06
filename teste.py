@@ -41,10 +41,8 @@ for pokemon in pokemon_list:
 
 # Criar DataFrame com os dados coletados
 df = pd.DataFrame(data)
-df_menor_pesado = df["weight"].min()
-print(df)
 
-'''
+
 # Remover Pokémon sem peso ou altura válidos (caso existam)
 df = df[(df["height"] > 0) & (df["weight"] > 0)]
 
@@ -68,4 +66,4 @@ plt.text(
 
 # Exibir o gráfico
 plt.show()
-'''
+
